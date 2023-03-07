@@ -1,0 +1,22 @@
+
+.create-note-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background-color: #222;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    color: white;
+
+}
+
+.create-note-form input, .create-note-form textarea{
+    width: 100%;
+    padding: 1rem 1rem;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid #222;
+}

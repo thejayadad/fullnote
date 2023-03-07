@@ -37,4 +37,14 @@ app.get("/", async (req, res) => {
 //     console.log(e)
 // })
 
+app.post("/add", async (req, res) => {
+  const newNote = new Note(req.body);
+  try {
+    const note = await newNote.save();
+    res.status(201).json(note);
+  } catch (error) {
+    res.status(400).json({message: error.message})
+  }
+})
+
 app.listen(5000, () => console.log("Server Listening"));

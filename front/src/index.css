@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: monospace;
+  background: black;
+  color: white;
+  display: grid;
+  place-items: center;
+  line-height: 1.5;
+}
+
+.app{
+  height: 48rem;
+  width: 24rem;
+  padding: 2rem 1.6rem;
+  overflow-y: scroll;
+  position: relative;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
